@@ -44,3 +44,12 @@ TagManager:
   - name: HUD
     uniqueID: 2727150477
     locked: 0
+  - name: WorldGround
+    uniqueID: 556248605
+    locked: 0
+  - name: WorldGrass
+    uniqueID: 1615049631
+    locked: 0
+  - name: TownGround
+    uniqueID: 1665754175
+    locked: 0
