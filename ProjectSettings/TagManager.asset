@@ -41,21 +41,6 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: HUD
-    uniqueID: 2727150477
-    locked: 0
-  - name: WorldGround
-    uniqueID: 556248605
-    locked: 0
-  - name: WorldGrass
-    uniqueID: 1615049631
-    locked: 0
-  - name: TownGround
-    uniqueID: 1665754175
-    locked: 0
-  - name: Level1
-    uniqueID: 3229183187
-    locked: 0
-  - name: Player
-    uniqueID: 191195635
+  - name: Floor
+    uniqueID: 3008805505
     locked: 0
