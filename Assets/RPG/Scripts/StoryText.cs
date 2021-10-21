@@ -37,7 +37,7 @@ public class StoryText : MonoBehaviour
 
         SourceCheck();
 
-        if (source > 4) {
+        if (source > 5) {
             SceneManager.LoadScene(loadingScene);
         }
     }
