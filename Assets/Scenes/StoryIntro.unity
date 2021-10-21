@@ -733,7 +733,7 @@ MonoBehaviour:
   Text3: {fileID: 1210376782}
   Text4: {fileID: 1375520835}
   continueText: {fileID: 608379874}
-  loadingScene: SampleScene
+  loadingScene: Tutorial
 --- !u!1 &1210376782
 GameObject:
   m_ObjectHideFlags: 0
