@@ -1,0 +1,540 @@
+fileFormatVersion: 2
+guid: 50e6b52d244ae2a4c83c0f3576ea43e0
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3875445415307327507
+    second: boulders_0
+  - first:
+      213: -2732865190186730795
+    second: boulders_1
+  - first:
+      213: -7148882103908499090
+    second: boulders_2
+  - first:
+      213: 3159777640298379056
+    second: boulders_3
+  - first:
+      213: -144847565919673127
+    second: boulders_4
+  - first:
+      213: -3064153308261209924
+    second: boulders_5
+  - first:
+      213: -1885714341876041380
+    second: boulders_6
+  - first:
+      213: -371212304401738924
+    second: boulders_7
+  - first:
+      213: -5570385129252377514
+    second: boulders_8
+  - first:
+      213: -6990466013516255074
+    second: boulders_9
+  - first:
+      213: -8305472758312530016
+    second: boulders_10
+  - first:
+      213: -7689308867134263382
+    second: boulders_11
+  - first:
+      213: 625876300287282647
+    second: boulders_12
+  - first:
+      213: -9108617940933832938
+    second: boulders_13
+  - first:
+      213: -4904165888442093283
+    second: boulders_14
+  - first:
+      213: 7740416558015739419
+    second: boulders_15
+  - first:
+      213: 1480112795922693373
+    second: boulders_16
+  - first:
+      213: 975214353915645391
+    second: boulders_17
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 4
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 4
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: boulders_0
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 1203
+        width: 230
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3183fcd721958c530800000000000000
+      internalID: 3875445415307327507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boulders_1
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 1205
+        width: 219
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5dab3efb699e21ad0800000000000000
+      internalID: -2732865190186730795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boulders_2
+      rect:
+        serializedVersion: 2
+        x: 494
+        y: 1197
+        width: 223
+        height: 131
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6103675a911acc90800000000000000
+      internalID: -7148882103908499090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boulders_3
+      rect:
+        serializedVersion: 2
+        x: 481
+        y: 961
+        width: 234
+        height: 206
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 037f43bc509c9db20800000000000000
+      internalID: 3159777640298379056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boulders_4
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 959
+        width: 240
+        height: 236
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d427cef7e56dfdf0800000000000000
+      internalID: -144847565919673127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boulders_5
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 956
+        width: 230
+        height: 247
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb8a0cbfcc0f975d0800000000000000
+      internalID: -3064153308261209924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boulders_6
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 720
+        width: 236
+        height: 178
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c597e980cc894d5e0800000000000000
+      internalID: -1885714341876041380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boulders_7
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 723
+        width: 232
+        height: 221
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45351eb306039daf0800000000000000
+      internalID: -371212304401738924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boulders_8
+      rect:
+        serializedVersion: 2
+        x: 481
+        y: 718
+        width: 232
+        height: 205
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65c2bc4fc3402b2b0800000000000000
+      internalID: -5570385129252377514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boulders_9
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 480
+        width: 213
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e903ce1a230ecfe90800000000000000
+      internalID: -6990466013516255074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boulders_10
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 484
+        width: 228
+        height: 232
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0af0915d7880dbc80800000000000000
+      internalID: -8305472758312530016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boulders_11
+      rect:
+        serializedVersion: 2
+        x: 494
+        y: 476
+        width: 226
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aaf633633561a4590800000000000000
+      internalID: -7689308867134263382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boulders_12
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 234
+        width: 234
+        height: 244
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7dd85f7dd2f8fa800800000000000000
+      internalID: 625876300287282647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boulders_13
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 236
+        width: 236
+        height: 238
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61f83e30e30b79180800000000000000
+      internalID: -9108617940933832938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boulders_14
+      rect:
+        serializedVersion: 2
+        x: 481
+        y: 234
+        width: 238
+        height: 209
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1132db9b17e0fbb0800000000000000
+      internalID: -4904165888442093283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boulders_15
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 2
+        width: 232
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b16741a59db7b6b60800000000000000
+      internalID: 7740416558015739419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boulders_16
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 0
+        width: 242
+        height: 223
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfc7b74feba6a8410800000000000000
+      internalID: 1480112795922693373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boulders_17
+      rect:
+        serializedVersion: 2
+        x: 481
+        y: 2
+        width: 234
+        height: 173
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fcd0109b948a88d00800000000000000
+      internalID: 975214353915645391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
