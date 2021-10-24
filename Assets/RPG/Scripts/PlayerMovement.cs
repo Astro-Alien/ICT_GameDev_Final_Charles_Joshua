@@ -22,10 +22,10 @@ public class PlayerMovement : MonoBehaviour
         animator.SetFloat("Speed", Mathf.Abs(x));
         
         if (deltaMovement.x > 0)
-            transform.localScale = new Vector3(5, 4, 1);
+            transform.localScale = new Vector3(7, 6, 1);
 
         else if (deltaMovement.x < 0)
-            transform.localScale = new Vector3(-5,4,1);
+            transform.localScale = new Vector3(-7,6,1);
 
         transform.Translate(deltaMovement * Time.deltaTime);
 
