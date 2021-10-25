@@ -84,7 +84,7 @@ public class EnemyDialogue : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collider.CompareTag("Player"))
+        if (collision.CompareTag("Player"))
         {
             stopMoving = true;
             canvas.GetComponent<Canvas>().enabled = true;
