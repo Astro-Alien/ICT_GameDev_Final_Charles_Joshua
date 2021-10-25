@@ -26,17 +26,24 @@ public class Movement : MonoBehaviour
         {
             //right and left
             rigid.MovePosition(rigid.position + playerVec * speed * Time.deltaTime);
-            animator.SetFloat("Horizontal", playerVec.x);
+            animator.SetFloat("HorizontalMovement", playerVec.x);
+            animator.SetFloat("VerticalMovement", 0);
+            animator.SetBool("Moving", true);
         }
-        else if (playerVec.y != 0)
+        if (playerVec.y != 0)
         {
             //right and left
             rigid.MovePosition(rigid.position + playerVec * speed * Time.deltaTime);
-            animator.SetFloat("Horizontal", playerVec.y);
+            animator.SetFloat("HorizontalMovement", 0);
+            animator.SetFloat("VerticalMovement", playerVec.y);
+            animator.SetBool("Moving", true);
+
         }
 
+        /**
         if (Input.GetButton("Fire3")) {
             speed += 10;
         }
+        **/
     }
 }
