@@ -1,5 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -7,7 +9,6 @@ public class EnemyDialogue : MonoBehaviour
 {
     public Canvas canvas;
     public CircleCollider2D collider;
-    public Rigidbody2D player;
     public GameObject text1;
     public GameObject text2;
     public GameObject text3;
@@ -17,19 +18,20 @@ public class EnemyDialogue : MonoBehaviour
     public GameObject text7;
     public GameObject text8;
 
+    public GameObject script;
+
     private bool stopMoving;
     private int source;
 
     // Start is called before the first frame update
     void Start()
     {
-        
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
-        if (Input.GetButton("Submit") && stopMoving == true) {
+        if (Input.GetAxis("Jump") > 0) {
             text1.GetComponent<Text>().enabled = false;
             text2.GetComponent<Text>().enabled = false;
             text3.GetComponent<Text>().enabled = false;
@@ -89,8 +91,18 @@ public class EnemyDialogue : MonoBehaviour
             stopMoving = true;
             canvas.GetComponent<Canvas>().enabled = true;
 
-            if (stopMoving == true) {
-                player.MovePosition(player.position);
+            FixedUpdate();
+
+            if (stopMoving == true)
+            {
+                script.GetComponent<MonoBehaviour>().enabled = false;
+                //script.GetComponent<Animator>().enabled = false;
+            }
+            else if (stopMoving == false)
+            {
+                //script.enabled = true;
+                script.GetComponent<MonoBehaviour>().enabled = true;
+                script.GetComponent<Animator>().enabled = true;
             }
         }
     }
