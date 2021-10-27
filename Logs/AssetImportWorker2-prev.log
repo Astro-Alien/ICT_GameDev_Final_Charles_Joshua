@@ -1,0 +1,181 @@
+Using pre-set license
+Built from '2021.1/staging' branch; Version is '2021.1.21f1 (f2d5d3c59f8c) revision 15914451'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10 Home Single Language; OS build 19043.1288; Version 2009; 64bit' Language: 'en' Physical Memory: 3918 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2021.1.21f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker2
+-projectPath
+C:/Users/joshu/ICT_GameDev_Final_Charles_Joshua
+-logFile
+Logs/AssetImportWorker2.log
+-srvPort
+53213
+Successfully changed project path to: C:/Users/joshu/ICT_GameDev_Final_Charles_Joshua
+C:/Users/joshu/ICT_GameDev_Final_Charles_Joshua
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 1410.86 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2021.1.21f1 (f2d5d3c59f8c)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.1.21f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/joshu/ICT_GameDev_Final_Charles_Joshua/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: Intel(R) UHD Graphics 600 (ID=0x3185)
+    Vendor:   Intel
+    VRAM:     1959 MB
+    Driver:   27.20.100.8729
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.1.21f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.1.21f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.1.21f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56736
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.1.21f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.008443 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 918.20 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  8.882 seconds
+Domain Reload Profiling:
+	ReloadAssembly (8883ms)
+		BeginReloadAssembly (613ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (3ms)
+		EndReloadAssembly (2335ms)
+			LoadAssemblies (597ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (647ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (111ms)
+			SetupLoadedEditorAssemblies (1408ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (19ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (918ms)
+				BeforeProcessingInitializeOnLoad (5ms)
+				ProcessInitializeOnLoadAttributes (350ms)
+				ProcessInitializeOnLoadMethodAttributes (114ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.031941 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\joshu\ICT_GameDev_Final_Charles_Joshua\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\joshu\ICT_GameDev_Final_Charles_Joshua\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 526.78 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  5.374 seconds
+Domain Reload Profiling:
+	ReloadAssembly (5375ms)
+		BeginReloadAssembly (627ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (15ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (64ms)
+		EndReloadAssembly (4490ms)
+			LoadAssemblies (545ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (1581ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (180ms)
+			SetupLoadedEditorAssemblies (1911ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (15ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (527ms)
+				BeforeProcessingInitializeOnLoad (300ms)
+				ProcessInitializeOnLoadAttributes (972ms)
+				ProcessInitializeOnLoadMethodAttributes (60ms)
+				AfterProcessingInitializeOnLoad (35ms)
+				EditorAssembliesLoaded (1ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (39ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.53 seconds
+Refreshing native plugins compatible for Editor in 6.75 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3555 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 139.3 MB.
+System memory in use after: 139.5 MB.
+
+Unloading 29 unused Assets to reduce memory usage. Loaded Objects now: 4003.
+Total: 17.455600 ms (FindLiveObjects: 2.839000 ms CreateObjectMapping: 0.706200 ms MarkObjects: 13.697100 ms  DeleteObjects: 0.209400 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  path: Assets/RPG/NEW SPRITE SET/PIPOYA FREE RPG Character Sprites 32x32/Enemy/Enemy 09-1.png
+  artifactKey: Guid(92594554e6f0e764091007cde84f31c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RPG/NEW SPRITE SET/PIPOYA FREE RPG Character Sprites 32x32/Enemy/Enemy 09-1.png using Guid(92594554e6f0e764091007cde84f31c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '48e409ace7ac2e081c6c33d172f40bee') in 0.558467 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.006604 seconds.
+  path: Assets/RPG/NEW SPRITE SET/PIPOYA FREE RPG Character Sprites 32x32/Enemy/Enemy 01-1.png
+  artifactKey: Guid(bbdabbf671bae0744a14f6e548f71ec5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RPG/NEW SPRITE SET/PIPOYA FREE RPG Character Sprites 32x32/Enemy/Enemy 01-1.png using Guid(bbdabbf671bae0744a14f6e548f71ec5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '33d70195b3d90c4aca8e1ed8ef8519b7') in 0.221312 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.001823 seconds.
+  path: Assets/RPG/NEW SPRITE SET/PIPOYA FREE RPG Character Sprites 32x32/Enemy/Enemy 07-1.png
+  artifactKey: Guid(593ebdd09816637419f2465d2358dbed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RPG/NEW SPRITE SET/PIPOYA FREE RPG Character Sprites 32x32/Enemy/Enemy 07-1.png using Guid(593ebdd09816637419f2465d2358dbed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd76a380f914af15b416dd5de537a5f63') in 0.175454 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000621 seconds.
+  path: Assets/RPG/NEW SPRITE SET/PIPOYA FREE RPG Character Sprites 32x32/Enemy/Enemy 05-1.png
+  artifactKey: Guid(e5553fe158e0e55449e5aaab3cb40123) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RPG/NEW SPRITE SET/PIPOYA FREE RPG Character Sprites 32x32/Enemy/Enemy 05-1.png using Guid(e5553fe158e0e55449e5aaab3cb40123) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dbdef6c1b4a347a85f6e9c78dd5a5f59') in 0.099537 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000639 seconds.
+  path: Assets/RPG/NEW SPRITE SET/PIPOYA FREE RPG Character Sprites 32x32/Enemy/Enemy 04-1.png
+  artifactKey: Guid(7c7518b66618992419232f17cc09fff0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RPG/NEW SPRITE SET/PIPOYA FREE RPG Character Sprites 32x32/Enemy/Enemy 04-1.png using Guid(7c7518b66618992419232f17cc09fff0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5719d6858b0c3c81debd7288d97accc7') in 0.155596 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.011527 seconds.
+  path: Assets/RPG/NEW SPRITE SET/PIPOYA FREE RPG Character Sprites 32x32/Enemy/Enemy 15-2.png
+  artifactKey: Guid(d4ec9a4d9c6ecbc41b4505f63f0706d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RPG/NEW SPRITE SET/PIPOYA FREE RPG Character Sprites 32x32/Enemy/Enemy 15-2.png using Guid(d4ec9a4d9c6ecbc41b4505f63f0706d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9f58d4cde362ba9d26fbfcb4bb77f290') in 0.116430 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000723 seconds.
+  path: Assets/RPG/NEW SPRITE SET/PIPOYA FREE RPG Character Sprites 32x32/Enemy/Enemy 02-1.png
+  artifactKey: Guid(1210ae3b2749c6846b3a624c203210ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RPG/NEW SPRITE SET/PIPOYA FREE RPG Character Sprites 32x32/Enemy/Enemy 02-1.png using Guid(1210ae3b2749c6846b3a624c203210ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '165145ca2a0681d82b34cf4e9fc687ae') in 0.112803 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000718 seconds.
+  path: Assets/RPG/NEW SPRITE SET/PIPOYA FREE RPG Character Sprites 32x32/Boss
+  artifactKey: Guid(ae8af3dfb6e24b04fb8fa13566d6b5c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RPG/NEW SPRITE SET/PIPOYA FREE RPG Character Sprites 32x32/Boss using Guid(ae8af3dfb6e24b04fb8fa13566d6b5c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9222ece2c86dfc99e9f6456993b27954') in 0.050396 seconds 

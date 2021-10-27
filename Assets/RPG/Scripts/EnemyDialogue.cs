@@ -21,7 +21,7 @@ public class EnemyDialogue : MonoBehaviour
     public GameObject script;
 
     private bool stopMoving;
-    private int source;
+    private int source = 0;
 
     // Start is called before the first frame update
     void Start()
@@ -31,6 +31,7 @@ public class EnemyDialogue : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
+        
         if (Input.GetAxis("Jump") > 0) {
             text1.GetComponent<Text>().enabled = false;
             text2.GetComponent<Text>().enabled = false;
@@ -42,45 +43,36 @@ public class EnemyDialogue : MonoBehaviour
             text8.GetComponent<Text>().enabled = false;
             source += 1;
         }
-
-        SourceControl();
-
-        if (source > 8) {
-            stopMoving = false;
-        }
     }
 
     private void SourceControl() {
-        if (source == 1) {
-            text1.GetComponent<Text>().enabled = false;
-        }
         if (source == 2)
         {
-            text2.GetComponent<Text>().enabled = false;
+            text2.GetComponent<Text>().enabled = true;
         }
         if (source == 3)
         {
-            text3.GetComponent<Text>().enabled = false;
+            text3.GetComponent<Text>().enabled = true;
         }
         if (source == 4)
         {
-            text4.GetComponent<Text>().enabled = false;
+            text4.GetComponent<Text>().enabled = true;
         }
         if (source == 5)
         {
-            text5.GetComponent<Text>().enabled = false;
+            text5.GetComponent<Text>().enabled = true;
         }
         if (source == 6)
         {
-            text6.GetComponent<Text>().enabled = false;
+            text6.GetComponent<Text>().enabled = true;
         }
         if (source == 7)
         {
-            text7.GetComponent<Text>().enabled = false;
+            text7.GetComponent<Text>().enabled = true;
         }
         if (source == 8)
         {
-            text8.GetComponent<Text>().enabled = false;
+            text8.GetComponent<Text>().enabled = true;
         }
     }
 
@@ -90,17 +82,30 @@ public class EnemyDialogue : MonoBehaviour
         {
             stopMoving = true;
             canvas.GetComponent<Canvas>().enabled = true;
+            text1.GetComponent<Text>().enabled = true;
 
-            FixedUpdate();
+            SourceControl();
+        }
+    }
+
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Player"))
+        {
+            if (source > 8)
+            {
+                stopMoving = false;
+            }
+
+            SourceControl();
 
             if (stopMoving == true)
             {
                 script.GetComponent<MonoBehaviour>().enabled = false;
-                //script.GetComponent<Animator>().enabled = false;
+                script.GetComponent<Animator>().enabled = false;
             }
             else if (stopMoving == false)
             {
-                //script.enabled = true;
                 script.GetComponent<MonoBehaviour>().enabled = true;
                 script.GetComponent<Animator>().enabled = true;
             }
