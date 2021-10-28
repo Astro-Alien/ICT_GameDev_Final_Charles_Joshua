@@ -23,6 +23,10 @@ public class EnemyDialogue : MonoBehaviour
     private bool stopMoving;
     private int source = 0;
 
+    private float start = 0f;
+    private float pause = 10f;
+    private bool wait;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -31,17 +35,33 @@ public class EnemyDialogue : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        
-        if (Input.GetAxis("Jump") > 0) {
-            text1.GetComponent<Text>().enabled = false;
-            text2.GetComponent<Text>().enabled = false;
-            text3.GetComponent<Text>().enabled = false;
-            text4.GetComponent<Text>().enabled = false;
-            text5.GetComponent<Text>().enabled = false;
-            text6.GetComponent<Text>().enabled = false;
-            text7.GetComponent<Text>().enabled = false;
-            text8.GetComponent<Text>().enabled = false;
-            source += 1;
+        if (Time.time - start > pause)
+        {
+            if (Input.GetAxis("Jump") > 0)
+            {
+                text1.GetComponent<Text>().enabled = false;
+                text2.GetComponent<Text>().enabled = false;
+                text3.GetComponent<Text>().enabled = false;
+                text4.GetComponent<Text>().enabled = false;
+                text5.GetComponent<Text>().enabled = false;
+                text6.GetComponent<Text>().enabled = false;
+                text7.GetComponent<Text>().enabled = false;
+                text8.GetComponent<Text>().enabled = false;
+                source += 1;
+
+                start += 5;
+            }
+
+            SourceControl();
+        }
+
+        if (source > 8)
+        {
+            stopMoving = false;
+            canvas.GetComponent<Canvas>().enabled = false;
+
+            script.GetComponent<MonoBehaviour>().enabled = true;
+            script.GetComponent<Animator>().enabled = true;
         }
     }
 
@@ -50,27 +70,27 @@ public class EnemyDialogue : MonoBehaviour
         {
             text2.GetComponent<Text>().enabled = true;
         }
-        if (source == 3)
+        else if (source == 3)
         {
             text3.GetComponent<Text>().enabled = true;
         }
-        if (source == 4)
+        else if (source == 4)
         {
             text4.GetComponent<Text>().enabled = true;
         }
-        if (source == 5)
+        else if (source == 5)
         {
             text5.GetComponent<Text>().enabled = true;
         }
-        if (source == 6)
+        else if (source == 6)
         {
             text6.GetComponent<Text>().enabled = true;
         }
-        if (source == 7)
+        else if (source == 7)
         {
             text7.GetComponent<Text>().enabled = true;
         }
-        if (source == 8)
+        else if (source == 8)
         {
             text8.GetComponent<Text>().enabled = true;
         }
@@ -83,8 +103,6 @@ public class EnemyDialogue : MonoBehaviour
             stopMoving = true;
             canvas.GetComponent<Canvas>().enabled = true;
             text1.GetComponent<Text>().enabled = true;
-
-            SourceControl();
         }
     }
 
@@ -92,23 +110,27 @@ public class EnemyDialogue : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
-            if (source > 8)
+            /**if (source > 8)
             {
                 stopMoving = false;
-            }
-
-            SourceControl();
+            }**/
 
             if (stopMoving == true)
             {
                 script.GetComponent<MonoBehaviour>().enabled = false;
                 script.GetComponent<Animator>().enabled = false;
             }
-            else if (stopMoving == false)
+            if (stopMoving == false)
             {
                 script.GetComponent<MonoBehaviour>().enabled = true;
                 script.GetComponent<Animator>().enabled = true;
             }
         }
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        //start the script that starts the first battle
+
     }
 }

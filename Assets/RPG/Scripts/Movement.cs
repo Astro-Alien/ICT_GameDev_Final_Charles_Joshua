@@ -10,6 +10,8 @@ public class Movement : MonoBehaviour
     private Vector2 playerVec;
     private Animator animator;
 
+    private bool attack;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -22,7 +24,8 @@ public class Movement : MonoBehaviour
         playerVec.x = Input.GetAxisRaw("Horizontal");
         playerVec.y = Input.GetAxisRaw("Vertical");
 
-        if (playerVec.x != 0)
+        //mooooov
+        if (playerVec.x != 0 && Input.GetButton("Fire3") == false)
         {
             //right and left
             rigid.MovePosition(rigid.position + playerVec * speed * Time.deltaTime);
@@ -30,14 +33,46 @@ public class Movement : MonoBehaviour
             animator.SetFloat("VerticalMovement", 0);
             animator.SetBool("Moving", true);
         }
-        if (playerVec.y != 0)
+        else {
+            animator.SetFloat("HorizontalMovement", 0);
+        }
+        if (playerVec.y != 0 && Input.GetButton("Fire3") == false)
         {
-            //right and left
+            //up and down
             rigid.MovePosition(rigid.position + playerVec * speed * Time.deltaTime);
             animator.SetFloat("HorizontalMovement", 0);
             animator.SetFloat("VerticalMovement", playerVec.y);
             animator.SetBool("Moving", true);
+        }
+        else {
+            animator.SetFloat("VerticalMovement", 0);
+        }
 
+        //attacccc
+        if (Input.GetButton("Fire3") && playerVec.x != 0) {
+            //attack horizontal
+            animator.SetFloat("HorizontalAttack", playerVec.x);
+            animator.SetFloat("HorizontalMovement", 0);
+            animator.SetBool("Moving", true);
+        }
+        else if(Input.GetButtonUp("Fire3") && playerVec.x != 0)
+        {
+            animator.SetFloat("HorizontalAttack", 0);
+            animator.SetFloat("VerticalAttack", 0);
+            animator.SetBool("Moving", true);
+        }
+
+        if (Input.GetButton("Fire3") && playerVec.y != 0) {
+            //attack vertical
+            animator.SetFloat("HorizontalAttack", 0);
+            animator.SetFloat("VerticalAttack", playerVec.y);
+            animator.SetBool("Moving", true);
+        }
+        else if(Input.GetButtonUp("Fire3") && playerVec.y != 0)
+        {
+            animator.SetFloat("HorizontalAttack", 0);
+            animator.SetFloat("VerticalAttack", 0);
+            animator.SetBool("Moving", true);
         }
 
         /**
