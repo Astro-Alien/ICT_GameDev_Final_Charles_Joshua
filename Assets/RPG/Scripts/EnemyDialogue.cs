@@ -8,6 +8,7 @@ using UnityEngine.UI;
 public class EnemyDialogue : MonoBehaviour
 {
     public Canvas canvas;
+    public Canvas enemyHealthBar;
     public CircleCollider2D collider;
     public GameObject text1;
     public GameObject text2;
@@ -59,6 +60,7 @@ public class EnemyDialogue : MonoBehaviour
         {
             stopMoving = false;
             canvas.GetComponent<Canvas>().enabled = false;
+            enemyHealthBar.GetComponent<Canvas>().enabled = true;
 
             script.GetComponent<MonoBehaviour>().enabled = true;
             script.GetComponent<Animator>().enabled = true;
