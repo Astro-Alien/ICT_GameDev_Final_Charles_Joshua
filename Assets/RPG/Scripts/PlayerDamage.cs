@@ -12,6 +12,7 @@ public class PlayerDamage : MonoBehaviour
     public Image fullHealth2;
     public Image halfHealth3;
     public Image fullHealth3;
+    public Canvas gameOver;
 
     private int counter;
     private bool colliding;
@@ -35,35 +36,41 @@ public class PlayerDamage : MonoBehaviour
             colliding = true;
             counter += 1;
 
-            if (counter == 1)
+            if (counter == 2)
             {
                 fullHealth3.enabled = false;
                 halfHealth3.enabled = true;
             }
-            if (counter == 2)
+            if (counter == 4)
             {
                 fullHealth3.enabled = false;
                 halfHealth3.enabled = false;
             }
-            if (counter == 3)
+            if (counter == 6)
             {
                 fullHealth2.enabled = false;
                 halfHealth2.enabled = true;
             }
-            if (counter == 4)
+            if (counter == 8)
             {
                 fullHealth2.enabled = false;
                 halfHealth2.enabled = false;
             }
-            if (counter == 5)
+            if (counter == 10)
             {
                 fullHealth1.enabled = false;
                 halfHealth1.enabled = true;
             }
-            if (counter == 6)
+            if (counter == 12)
             {
                 fullHealth1.enabled = false;
                 halfHealth1.enabled = false;
+            }
+
+            if (counter == 12 || counter > 12) {
+                DestroyObject(player);
+
+                gameOver.enabled = true;
             }
         }
     }

@@ -13,8 +13,9 @@ public class StoryText : MonoBehaviour
     public Text continueText;
     public string loadingScene;
     private int source;
-    private float seconds = 5f;
-    private bool mustWait;
+
+    private float start = 0f;
+    private float pause = 4f;
 
     // Start is called before the first frame update
     void Start()
@@ -25,19 +26,23 @@ public class StoryText : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
-        if (Input.GetButton("Submit"))
+        if (Time.time - start > pause)
         {
-            Text.GetComponent<Text>().enabled = false;
-            Text2.GetComponent<Text>().enabled = false;
-            Text3.GetComponent<Text>().enabled = false;
-            Text4.GetComponent<Text>().enabled = false;
-            source += 1;
+            if (Input.GetButton("Submit"))
+            {
+                Text.GetComponent<Text>().enabled = false;
+                Text2.GetComponent<Text>().enabled = false;
+                Text3.GetComponent<Text>().enabled = false;
+                Text4.GetComponent<Text>().enabled = false;
+                source += 1;
+                continueText.enabled = true;
+
+                pause += 4f;
+            }
+
+            SourceCheck();
         }
-
-        SourceCheck();
-
-        if (source > 5) {
+        if (source > 4) {
             SceneManager.LoadScene(loadingScene);
         }
     }
