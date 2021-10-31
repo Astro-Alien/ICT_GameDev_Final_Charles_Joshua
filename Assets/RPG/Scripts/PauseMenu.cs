@@ -7,11 +7,11 @@ public class PauseMenu : MonoBehaviour
     public string OpenScene;
     public GameObject pausedGameMenu;
 
-    void Update()
+    public void FreezeGame()
     {
-        if (Input.GetKey(KeyCode.Escape)) {
+       
 
-            if (gamePaused)
+           if (gamePaused)
             {
 
                 ResumeGame();
@@ -26,7 +26,7 @@ public class PauseMenu : MonoBehaviour
             }
         
         
-        }
+        
     }
 
     public void ResumeGame()
