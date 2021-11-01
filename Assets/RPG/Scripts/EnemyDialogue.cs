@@ -21,6 +21,8 @@ public class EnemyDialogue : MonoBehaviour
 
     public GameObject script;
 
+    public Text tip;
+
     private bool stopMoving;
     private int source = 0;
 
@@ -62,6 +64,7 @@ public class EnemyDialogue : MonoBehaviour
             canvas.GetComponent<Canvas>().enabled = false;
             enemyHealthBar.GetComponent<Canvas>().enabled = true;
 
+
             script.GetComponent<MonoBehaviour>().enabled = true;
             script.GetComponent<Animator>().enabled = true;
         }
@@ -95,6 +98,9 @@ public class EnemyDialogue : MonoBehaviour
         else if (source == 8)
         {
             text8.GetComponent<Text>().enabled = true;
+        }
+        else if (text2.activeSelf == false) {
+            source = 8;
         }
     }
 
@@ -133,6 +139,8 @@ public class EnemyDialogue : MonoBehaviour
     private void OnTriggerExit2D(Collider2D collision)
     {
         //start the script that starts the first battle
-
+        if (collision.CompareTag("Player")) {
+            tip.enabled = false;
+        }
     }
 }

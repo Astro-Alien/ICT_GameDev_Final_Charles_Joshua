@@ -7829,6 +7829,7 @@ MonoBehaviour:
   text7: {fileID: 443948960}
   text8: {fileID: 69488252}
   script: {fileID: 389690906}
+  tip: {fileID: 0}
 --- !u!1 &1789906186
 GameObject:
   m_ObjectHideFlags: 0
