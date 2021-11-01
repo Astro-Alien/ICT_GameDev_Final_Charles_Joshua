@@ -24,8 +24,7 @@ public class PauseMenu : MonoBehaviour
             
             
             }
-        
-        
+
         
     }
 
