@@ -6,6 +6,7 @@ public class Spawner2 : MonoBehaviour
 {
 
     public GameObject enemyOne;
+    public GameObject enemyTwo;
     
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -15,7 +16,7 @@ public class Spawner2 : MonoBehaviour
 
             Debug.Log("enemy is here");
             enemyOne.SetActive(true);
-        
+            enemyTwo.SetActive(true);
            
             GetComponent<Collider2D>().enabled = false;
 
