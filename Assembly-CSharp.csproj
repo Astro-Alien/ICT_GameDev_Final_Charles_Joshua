@@ -73,6 +73,7 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\EnvMapAnimator.cs" />
     <Compile Include="Assets\RPG\Scripts\Spawner.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_UiFrameRateCounter.cs" />
+    <Compile Include="Assets\EnemyAIMovement.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\CameraController.cs" />
     <Compile Include="Assets\RPG\Scripts\Spawner2.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMPro_InstructionOverlay.cs" />
@@ -112,7 +113,10 @@
     <Compile Include="Assets\RPG\Scripts\LevelLoader.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
     <Compile Include="Assets\RPG\Scripts\ItemPickupHealthPotion.cs" />
-    <Compile Include="Assets\EnemyAIMovement.cs" />
+    <Compile Include="Assets\NPCMovement.cs" />
+    <Compile Include="Assets\TriggerNPC.cs" />
+    <Compile Include="Assets\resetPosition01.cs" />
+    <Compile Include="Assets\PriestNPC.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
