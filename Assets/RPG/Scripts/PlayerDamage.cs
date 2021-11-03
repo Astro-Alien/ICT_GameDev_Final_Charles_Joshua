@@ -12,10 +12,23 @@ public class PlayerDamage : MonoBehaviour
     public Image fullHealth2;
     public Image halfHealth3;
     public Image fullHealth3;
+    public Image halfHealth4;
+    public Image fullHealth4;
+    public Image halfHealth5;
+    public Image fullHealth5;
     public Canvas gameOver;
+
+    public GameObject boss;
+
+    public GameObject flameLashAttack;
+    public GameObject midnightAttack;
+    public GameObject freezingAttack;
 
     private int counter;
     private bool colliding;
+
+    private float start = 0f;
+    private float end = 20f;
 
     // Start is called before the first frame update
     void Start()
@@ -26,7 +39,64 @@ public class PlayerDamage : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (Time.time - start > end) {
+            Vector2 pos = new Vector2();
+            pos = player.transform.position;
+
+            flameLashAttack.transform.position = pos;
+            flameLashAttack.GetComponent<Animator>().SetBool("Attacking", true);
+
+            if (counter == 2)
+            {
+                fullHealth5.enabled = false;
+                halfHealth5.enabled = true;
+            }
+            if (counter == 4)
+            {
+                fullHealth5.enabled = false;
+                halfHealth5.enabled = false;
+            }
+            if (counter == 6)
+            {
+                fullHealth4.enabled = false;
+                halfHealth4.enabled = true;
+            }
+            if (counter == 8)
+            {
+                fullHealth4.enabled = false;
+                halfHealth4.enabled = false;
+            }
+            if (counter == 10)
+            {
+                fullHealth3.enabled = false;
+                halfHealth3.enabled = true;
+            }
+            if (counter == 12)
+            {
+                fullHealth3.enabled = false;
+                halfHealth3.enabled = false;
+            }
+            if (counter == 14)
+            {
+                fullHealth2.enabled = false;
+                halfHealth2.enabled = true;
+            }
+            if (counter == 16)
+            {
+                fullHealth2.enabled = false;
+                halfHealth2.enabled = false;
+            }
+            if (counter == 18)
+            {
+                fullHealth1.enabled = false;
+                halfHealth1.enabled = true;
+            }
+            if (counter == 20)
+            {
+                fullHealth1.enabled = false;
+                halfHealth1.enabled = false;
+            }
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -38,39 +108,83 @@ public class PlayerDamage : MonoBehaviour
 
             if (counter == 2)
             {
+                fullHealth5.enabled = false;
+                halfHealth5.enabled = true;
+            }
+            if (counter == 4)
+            {
+                fullHealth5.enabled = false;
+                halfHealth5.enabled = false;
+            }
+            if (counter == 6)
+            {
+                fullHealth4.enabled = false;
+                halfHealth4.enabled = true;
+            }
+            if (counter == 8)
+            {
+                fullHealth4.enabled = false;
+                halfHealth4.enabled = false;
+            }
+            if (counter == 10)
+            {
                 fullHealth3.enabled = false;
                 halfHealth3.enabled = true;
             }
-            if (counter == 4)
+            if (counter == 12)
             {
                 fullHealth3.enabled = false;
                 halfHealth3.enabled = false;
             }
-            if (counter == 6)
+            if (counter == 14)
             {
                 fullHealth2.enabled = false;
                 halfHealth2.enabled = true;
             }
-            if (counter == 8)
+            if (counter == 16)
             {
                 fullHealth2.enabled = false;
                 halfHealth2.enabled = false;
             }
-            if (counter == 10)
+            if (counter == 18)
             {
                 fullHealth1.enabled = false;
                 halfHealth1.enabled = true;
             }
-            if (counter == 12)
+            if (counter == 20)
             {
                 fullHealth1.enabled = false;
                 halfHealth1.enabled = false;
             }
 
-            if (counter == 12 || counter > 12) {
-                DestroyObject(player);
+            if (boss.gameObject.CompareTag("EvilKing"))
+            {
+                if (counter == 12 || counter > 12)
+                {
+                    DestroyObject(player);
 
-                gameOver.enabled = true;
+                    gameOver.enabled = true;
+                }
+            }
+
+            if (boss.gameObject.CompareTag("DarkSage"))
+            {
+                if (counter == 16 || counter > 16)
+                {
+                    DestroyObject(player);
+
+                    gameOver.enabled = true;
+                }
+            }
+
+            if (boss.gameObject.CompareTag("Atropos"))
+            {
+                if (counter == 20 || counter > 20)
+                {
+                    DestroyObject(player);
+
+                    gameOver.enabled = true;
+                }
             }
         }
     }

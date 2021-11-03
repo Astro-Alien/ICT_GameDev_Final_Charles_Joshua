@@ -13,7 +13,7 @@ public class EnemyFollow : MonoBehaviour
     private void Start()
     {
         targetPlayer = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
-       
+        secondEnemy = GameObject.FindGameObjectWithTag("Boss").GetComponent<Transform>();
     }
     private void Update()
     {

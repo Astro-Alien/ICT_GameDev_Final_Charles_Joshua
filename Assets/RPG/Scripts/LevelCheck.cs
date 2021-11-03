@@ -6,8 +6,6 @@ using UnityEngine;
 public class LevelCheck : MonoBehaviour
 {
     public GameObject LevelOpen;
-    
-    //public GameObject LevelOpenThree;
     public int levelComplete;
     private static string LevelReached = @"Assets\CurrentLevel.txt";
     private string[] value = File.ReadAllLines(LevelReached);
@@ -20,9 +18,8 @@ public class LevelCheck : MonoBehaviour
         {
 
             Debug.Log("Trigger hit");
-
+            
             //To update just replace this method in levels with the updateTextFile method();
-            //UpdateTextFile(levelComplete);
             checkTextFile();
             
 
@@ -45,11 +42,14 @@ public class LevelCheck : MonoBehaviour
     {
         int currentLevelValue = int.Parse(value[0]);
 
-        if(currentLevelValue == 1) { 
-              
-            LevelOpen.SetActive(true);
-            Debug.Log("Gate Two is Open");
-            
+        switch(currentLevelValue){
+            case 1:
+            case 2:
+                   LevelOpen.SetActive(true);
+                   break;  
+            default:
+                Debug.Log("Failed");
+                break;
         }
         Debug.Log("Current Value in the Text File is: "+ currentLevelValue);
 
