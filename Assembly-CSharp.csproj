@@ -85,6 +85,7 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextEventCheck.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ShaderPropAnimator.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\WarpTextExample.cs" />
+    <Compile Include="Assets\RPG\Scripts\EndingOneDialogue.cs" />
     <Compile Include="Assets\RPG\Scripts\PlayerMovement.cs" />
     <Compile Include="Assets\RPG\Scripts\EnemyFollow.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_DigitValidator.cs" />
@@ -95,13 +96,16 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark03.cs" />
     <Compile Include="Assets\RPG\Scripts\CamMovement.cs" />
     <Compile Include="Assets\RPG\Scripts\PlayerDamage.cs" />
+    <Compile Include="Assets\RPG\Scripts\AttackAtropos.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_FrameRateCounter.cs" />
     <Compile Include="Assets\RPG\Scripts\EnemyDialogue.cs" />
     <Compile Include="Assets\RPG\Scripts\CameraMovement.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexJitter.cs" />
     <Compile Include="Assets\RPG\Scripts\SoundOperations.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextEventHandler.cs" />
+    <Compile Include="Assets\RPG\Scripts\EnemyDialogueGodessAtropos.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextSelector_B.cs" />
+    <Compile Include="Assets\RPG\Scripts\FinalChoices.cs" />
     <Compile Include="Assets\LevelOneTrigger.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\DropdownSample.cs" />
     <Compile Include="Assets\RPG\Scripts\SceneTransitions\SceneChange.cs" />
