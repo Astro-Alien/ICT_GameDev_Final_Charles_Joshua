@@ -7,7 +7,7 @@ public class LevelLoader : MonoBehaviour
 {
     //add game object to trigger later
     //public GameObject levelTrigger
-    //write code to check whether level one has been completed with in text file record
+   
     public string SceneToLoad;
     public Animator animationTransition;
     public GameObject txtLevelName;

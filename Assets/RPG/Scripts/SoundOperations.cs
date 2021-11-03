@@ -12,6 +12,7 @@ public class SoundOperations : MonoBehaviour
         aod.Play();
         soundVolume = PlayerPrefs.GetFloat("gameSound");
         aod.volume = soundVolume;
+        sliderVolume.value = soundVolume;
     }
 
    

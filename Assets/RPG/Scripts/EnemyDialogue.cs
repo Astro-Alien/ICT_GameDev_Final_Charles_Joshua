@@ -5,7 +5,7 @@ using UnityEditor;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class EndingOneDialogue : MonoBehaviour
+public class EnemyDialogue : MonoBehaviour
 {
     public Canvas canvas;
     public Canvas enemyHealthBar;
@@ -20,9 +20,6 @@ public class EndingOneDialogue : MonoBehaviour
     public GameObject text8;
 
     public GameObject script;
-    public GameObject attackScript;
-
-    public Text tip;
 
     private bool stopMoving;
     private int source = 0;
@@ -59,49 +56,45 @@ public class EndingOneDialogue : MonoBehaviour
             SourceControl();
         }
 
-        if (source > 7)
+        if (source > 8)
         {
             stopMoving = false;
             canvas.GetComponent<Canvas>().enabled = false;
             enemyHealthBar.GetComponent<Canvas>().enabled = true;
 
-            attackScript.GetComponent<MonoBehaviour>().enabled = true;            
             script.GetComponent<MonoBehaviour>().enabled = true;
             script.GetComponent<Animator>().enabled = true;
         }
     }
 
     private void SourceControl() {
-        if (source == 1)
+        if (source == 2)
         {
             text2.GetComponent<Text>().enabled = true;
         }
-        else if (source == 2)
+        else if (source == 3)
         {
             text3.GetComponent<Text>().enabled = true;
         }
-        else if (source == 3)
+        else if (source == 4)
         {
             text4.GetComponent<Text>().enabled = true;
         }
-        else if (source == 4)
+        else if (source == 5)
         {
             text5.GetComponent<Text>().enabled = true;
         }
-        else if (source == 5)
+        else if (source == 6)
         {
             text6.GetComponent<Text>().enabled = true;
         }
-        else if (source == 6)
+        else if (source == 7)
         {
             text7.GetComponent<Text>().enabled = true;
         }
-        else if (source == 7)
+        else if (source == 8)
         {
             text8.GetComponent<Text>().enabled = true;
-        }
-        else if (text2.activeSelf == false) {
-            source = 8;
         }
     }
 
@@ -140,8 +133,6 @@ public class EndingOneDialogue : MonoBehaviour
     private void OnTriggerExit2D(Collider2D collision)
     {
         //start the script that starts the first battle
-        if (collision.CompareTag("Player")) {
-            tip.enabled = false;
-        }
+
     }
 }
