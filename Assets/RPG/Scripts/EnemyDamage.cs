@@ -59,9 +59,9 @@ public class EnemyDamage : MonoBehaviour
         if (collision.CompareTag("Player") && Input.GetButton("Fire3")) {
             enemyhealth1.enabled = false;
 
-            counter += 1;
+            //counter += 1;
 
-            Counter();
+            //Counter();
         }
     }
 
@@ -69,9 +69,9 @@ public class EnemyDamage : MonoBehaviour
     {
         if (collision.CompareTag("Player") && Input.GetButtonDown("Fire3"))
         {
-            //counter += 1;
+            counter += 1;
 
-            //Counter();
+            Counter();
         }
     }
 }

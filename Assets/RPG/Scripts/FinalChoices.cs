@@ -59,8 +59,9 @@ public class FinalChoices : MonoBehaviour
     public void LeaveMenu()
     {
         pausedGameMenu.SetActive(false);
+        SceneManager.LoadScene(EndingScene);
         Time.timeScale = 1f;
         gameChoice = false;
-        SceneManager.LoadScene(EndingScene);
+        
     }
 }
