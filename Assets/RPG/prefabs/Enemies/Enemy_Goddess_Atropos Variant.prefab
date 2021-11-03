@@ -101,11 +101,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 853053076520813429, guid: 4524dafc98fc4394c9cacf4774d4e82b, type: 3}
       propertyPath: m_Name
-      value: Enemy_Goddess_Atropos_HealthBar
-      objectReference: {fileID: 0}
-    - target: {fileID: 853053076520813429, guid: 4524dafc98fc4394c9cacf4774d4e82b, type: 3}
-      propertyPath: m_IsActive
-      value: 0
+      value: Enemy_Goddess_Atropos
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4524dafc98fc4394c9cacf4774d4e82b, type: 3}
