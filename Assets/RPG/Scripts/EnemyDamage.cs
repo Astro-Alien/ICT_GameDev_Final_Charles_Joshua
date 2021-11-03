@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class EnemyDamageGodessAtropos : MonoBehaviour
+public class EnemyDamage : MonoBehaviour
 {
     public GameObject player;
     public GameObject evilKing;

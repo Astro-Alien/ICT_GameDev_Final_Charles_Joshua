@@ -35,7 +35,7 @@ public class RegularEnemyDamage : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Player"))
+        if (collision.CompareTag("Player") && Input.GetButtonDown("Fire3"))
         {
             Counter();
         }
@@ -43,7 +43,7 @@ public class RegularEnemyDamage : MonoBehaviour
 
     private void OnTriggerStay2D(Collider2D collision)
     {
-        if (collision.CompareTag("Player"))
+        if (collision.CompareTag("Player") && Input.GetButtonDown("Fire3"))
         {
             Counter();
         }
