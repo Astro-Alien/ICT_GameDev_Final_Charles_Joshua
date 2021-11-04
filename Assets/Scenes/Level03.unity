@@ -41125,11 +41125,12 @@ GameObject:
   - component: {fileID: 663511706}
   - component: {fileID: 663511705}
   - component: {fileID: 663511707}
-  - component: {fileID: 663511708}
   - component: {fileID: 663511710}
+  - component: {fileID: 663511708}
+  - component: {fileID: 663511709}
   m_Layer: 0
   m_Name: Enemy_Godess_Atropos
-  m_TagString: Untagged
+  m_TagString: Atropos
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -41228,7 +41229,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 663511704}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0989974f4b8678849aa0178cb86d7393, type: 3}
+  m_Script: {fileID: 11500000, guid: 6a065004af0ad1542a2e1d1ddc31d9b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1192417191}
@@ -41240,6 +41241,22 @@ MonoBehaviour:
   enemyhealth4: {fileID: 1453843888}
   enemyhealth5: {fileID: 2094435899}
   enemyhealth6: {fileID: 149375321}
+--- !u!58 &663511709
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 663511704}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 1.28
 --- !u!61 &663511710
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -42436,6 +42453,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1887049084}
     - target: {fileID: 5438751817705532485, guid: 8104cd163f71ed04d848532746ea2575, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5438751817705532485, guid: 8104cd163f71ed04d848532746ea2575, type: 3}
       propertyPath: fullHealth1
       value: 
       objectReference: {fileID: 1326242237}
@@ -42586,6 +42607,34 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1001416072833924448, guid: a6c0539fabeb8214ea195ee3f96038aa, type: 3}
   m_PrefabInstance: {fileID: 142323538}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1192417192
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1192417191}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 81b5cf62d0c14bb4c803f507fec7fe1b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 1192417191}
+  halfHealth1: {fileID: 505174727}
+  fullHealth1: {fileID: 1326242237}
+  halfHealth2: {fileID: 1919231023}
+  fullHealth2: {fileID: 1540682148}
+  halfHealth3: {fileID: 1386427023}
+  fullHealth3: {fileID: 1786328439}
+  halfHealth4: {fileID: 966262199}
+  fullHealth4: {fileID: 376559012}
+  halfHealth5: {fileID: 1173374688}
+  fullHealth5: {fileID: 450994219}
+  gameOver: {fileID: 1887049084}
+  boss: {fileID: 663511704}
+  flameLashAttack: {fileID: 701151455}
+  midnightAttack: {fileID: 1913269624}
+  freezingAttack: {fileID: 700296304}
 --- !u!1001 &1194243124
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -42795,17 +42844,57 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1363728610, guid: 7c8dae5668d626445a5fcd0bd0dff0a5, type: 3}
+      propertyPath: text1
+      value: 
+      objectReference: {fileID: 1824340598}
+    - target: {fileID: 1363728610, guid: 7c8dae5668d626445a5fcd0bd0dff0a5, type: 3}
+      propertyPath: text2
+      value: 
+      objectReference: {fileID: 1824340597}
+    - target: {fileID: 1363728610, guid: 7c8dae5668d626445a5fcd0bd0dff0a5, type: 3}
+      propertyPath: text3
+      value: 
+      objectReference: {fileID: 1824340596}
+    - target: {fileID: 1363728610, guid: 7c8dae5668d626445a5fcd0bd0dff0a5, type: 3}
+      propertyPath: text4
+      value: 
+      objectReference: {fileID: 1824340595}
+    - target: {fileID: 1363728610, guid: 7c8dae5668d626445a5fcd0bd0dff0a5, type: 3}
+      propertyPath: text5
+      value: 
+      objectReference: {fileID: 1824340594}
+    - target: {fileID: 1363728610, guid: 7c8dae5668d626445a5fcd0bd0dff0a5, type: 3}
+      propertyPath: text6
+      value: 
+      objectReference: {fileID: 1824340593}
+    - target: {fileID: 1363728610, guid: 7c8dae5668d626445a5fcd0bd0dff0a5, type: 3}
+      propertyPath: text7
+      value: 
+      objectReference: {fileID: 1824340592}
+    - target: {fileID: 1363728610, guid: 7c8dae5668d626445a5fcd0bd0dff0a5, type: 3}
+      propertyPath: text8
+      value: 
+      objectReference: {fileID: 1824340591}
+    - target: {fileID: 1363728610, guid: 7c8dae5668d626445a5fcd0bd0dff0a5, type: 3}
+      propertyPath: canvas
+      value: 
+      objectReference: {fileID: 1824340590}
+    - target: {fileID: 1363728610, guid: 7c8dae5668d626445a5fcd0bd0dff0a5, type: 3}
+      propertyPath: choice
+      value: 
+      objectReference: {fileID: 1899917202}
+    - target: {fileID: 1363728610, guid: 7c8dae5668d626445a5fcd0bd0dff0a5, type: 3}
+      propertyPath: script
+      value: 
+      objectReference: {fileID: 1192417191}
+    - target: {fileID: 1363728610, guid: 7c8dae5668d626445a5fcd0bd0dff0a5, type: 3}
+      propertyPath: enemyHealthBar
+      value: 
+      objectReference: {fileID: 2077022954}
     - target: {fileID: 4975110418953927216, guid: 7c8dae5668d626445a5fcd0bd0dff0a5, type: 3}
       propertyPath: m_Name
       value: DialogueCollider_GoddessAtropos
-      objectReference: {fileID: 0}
-    - target: {fileID: 4975110418953927218, guid: 7c8dae5668d626445a5fcd0bd0dff0a5, type: 3}
-      propertyPath: m_Offset.x
-      value: 70.4
-      objectReference: {fileID: 0}
-    - target: {fileID: 4975110418953927218, guid: 7c8dae5668d626445a5fcd0bd0dff0a5, type: 3}
-      propertyPath: m_Offset.y
-      value: -16.6
       objectReference: {fileID: 0}
     - target: {fileID: 4975110418953927219, guid: 7c8dae5668d626445a5fcd0bd0dff0a5, type: 3}
       propertyPath: m_RootOrder
@@ -42851,46 +42940,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 4975110418953927217, guid: 7c8dae5668d626445a5fcd0bd0dff0a5, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7c8dae5668d626445a5fcd0bd0dff0a5, type: 3}
---- !u!1 &1363728609 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4975110418953927216, guid: 7c8dae5668d626445a5fcd0bd0dff0a5, type: 3}
-  m_PrefabInstance: {fileID: 1363728608}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1363728610
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1363728609}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8f0a180a420b8b24c9426e557e309c12, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  canvas: {fileID: 1824340590}
-  enemyHealthBar: {fileID: 2077022954}
-  collider: {fileID: 1363728612}
-  text1: {fileID: 1824340598}
-  text2: {fileID: 1824340597}
-  text3: {fileID: 1824340596}
-  text4: {fileID: 1824340595}
-  text5: {fileID: 1824340594}
-  text6: {fileID: 1824340593}
-  text7: {fileID: 1824340592}
-  text8: {fileID: 1824340591}
-  script: {fileID: 1192417191}
-  tip: {fileID: 0}
-  choice: {fileID: 1899917202}
-  thisScript: {fileID: 1363728609}
---- !u!58 &1363728612 stripped
-CircleCollider2D:
-  m_CorrespondingSourceObject: {fileID: 4975110418953927218, guid: 7c8dae5668d626445a5fcd0bd0dff0a5, type: 3}
-  m_PrefabInstance: {fileID: 1363728608}
-  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1386427023 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7436915840028079523, guid: 99d9d98c66b31d84ba5be7b971300c94, type: 3}
@@ -43020,12 +43071,24 @@ PrefabInstance:
 
 '
       objectReference: {fileID: 0}
+    - target: {fileID: 2060391209210198073, guid: 1a5bc0d7c5d0980438b01233989f77be, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2141625380582981946, guid: 1a5bc0d7c5d0980438b01233989f77be, type: 3}
       propertyPath: m_Text
       value: 'The humans wish to rebel against the gods for their unjust treatment.
 
         I
-        and a few others have come down to earth to resolve this conflict.'
+        and a few others deities have come down to earth to resolve this conflict.'
+      objectReference: {fileID: 0}
+    - target: {fileID: 2141625380582981946, guid: 1a5bc0d7c5d0980438b01233989f77be, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2141625380582981946, guid: 1a5bc0d7c5d0980438b01233989f77be, type: 3}
+      propertyPath: m_FontData.m_Alignment
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 3357131665938461836, guid: 1a5bc0d7c5d0980438b01233989f77be, type: 3}
       propertyPath: m_Text
@@ -43033,19 +43096,32 @@ PrefabInstance:
         me. \nI cannot gaurantee that whether you best me, or I best you, that any
         good will come of this."
       objectReference: {fileID: 0}
+    - target: {fileID: 3357131665938461836, guid: 1a5bc0d7c5d0980438b01233989f77be, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4172694231940559457, guid: 1a5bc0d7c5d0980438b01233989f77be, type: 3}
       propertyPath: m_Text
-      value: 'Heed my words Learco.
+      value: 'So Heed my words Learco.
 
-        This land will fall to ash once I leave...
-        And this land will fall to ash if I stay...
+        This land will fall to ash once I
+        leave... And this land will fall to ash if I stay...
 
-        So, what is your decision?'
+        Now then, what
+        is your decision?'
+      objectReference: {fileID: 0}
+    - target: {fileID: 4172694231940559457, guid: 1a5bc0d7c5d0980438b01233989f77be, type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4178274453283023042, guid: 1a5bc0d7c5d0980438b01233989f77be, type: 3}
       propertyPath: m_Text
       value: Nevertheless. I cannot give you your aunt back. Not while this land
         is still in danger.
+      objectReference: {fileID: 0}
+    - target: {fileID: 4178274453283023042, guid: 1a5bc0d7c5d0980438b01233989f77be, type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4478529769462301809, guid: 1a5bc0d7c5d0980438b01233989f77be, type: 3}
       propertyPath: m_Pivot.x
@@ -43137,12 +43213,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6354264200619448865, guid: 1a5bc0d7c5d0980438b01233989f77be, type: 3}
       propertyPath: m_Text
-      value: 'And now I can only wait for the total destruction of Olethros. '
+      value: 'But my efforts were to no avail.
+
+        And now I can only wait for
+        the total destruction of Olethros. '
+      objectReference: {fileID: 0}
+    - target: {fileID: 6354264200619448865, guid: 1a5bc0d7c5d0980438b01233989f77be, type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7849344274586586820, guid: 1a5bc0d7c5d0980438b01233989f77be, type: 3}
       propertyPath: m_Text
       value: "You've finally arrived.\nI assume you have come for your aunt, \nhave
         you not?"
+      objectReference: {fileID: 0}
+    - target: {fileID: 7849344274586586820, guid: 1a5bc0d7c5d0980438b01233989f77be, type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8199711036152466641, guid: 1a5bc0d7c5d0980438b01233989f77be, type: 3}
       propertyPath: m_Enabled
@@ -43154,6 +43241,14 @@ PrefabInstance:
 
         After
         the death of that demi-human, the heavens have been a mess.'
+      objectReference: {fileID: 0}
+    - target: {fileID: 9202139410679862914, guid: 1a5bc0d7c5d0980438b01233989f77be, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9202139410679862914, guid: 1a5bc0d7c5d0980438b01233989f77be, type: 3}
+      propertyPath: m_FontData.m_Alignment
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1a5bc0d7c5d0980438b01233989f77be, type: 3}
@@ -43213,6 +43308,10 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 749608257}
+    - target: {fileID: 3280338320379914176, guid: 66138dde19d9ed84682cf1be6b5d16b5, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3280338320379914177, guid: 66138dde19d9ed84682cf1be6b5d16b5, type: 3}
       propertyPath: m_Pivot.x
       value: 0

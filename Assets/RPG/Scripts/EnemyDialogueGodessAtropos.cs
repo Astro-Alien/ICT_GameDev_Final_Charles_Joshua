@@ -56,14 +56,15 @@ namespace Assets.RPG.Scripts
                     text8.GetComponent<Text>().enabled = false;
                     source += 1;
 
-                    start += 5;
+                    start += 3;
                 }
 
                 SourceControl();
             }
 
-            if (source > 7 && source < 9)
+            if (source > 7)
             {
+				stopMoving = false;
                 canvas.GetComponent<Canvas>().enabled = false;
                 choice.GetComponent<Canvas>().enabled = true;
 
@@ -148,6 +149,7 @@ namespace Assets.RPG.Scripts
             //start the script that starts the first battle
             if (collision.CompareTag("Player"))
             {
+				stopMoving = false;
                 tip.enabled = false;
             }
         }

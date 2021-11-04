@@ -29,6 +29,7 @@ public class PlayerDamage : MonoBehaviour
 
     private float start = 0f;
     private float end = 20f;
+	private int rand;
 
     // Start is called before the first frame update
     void Start()
@@ -39,64 +40,16 @@ public class PlayerDamage : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Time.time - start > end) {
-            Vector2 pos = new Vector2();
-            pos = player.transform.position;
+		rand = Random.Range(1, 10);
+		
+		if(rand = 5){
+        Vector2 pos = new Vector2();
+        pos = player.transform.position;
 
-            flameLashAttack.transform.position = pos;
-            flameLashAttack.GetComponent<Animator>().SetBool("Attacking", true);
-
-            if (counter == 2)
-            {
-                fullHealth5.enabled = false;
-                halfHealth5.enabled = true;
-            }
-            if (counter == 4)
-            {
-                fullHealth5.enabled = false;
-                halfHealth5.enabled = false;
-            }
-            if (counter == 6)
-            {
-                fullHealth4.enabled = false;
-                halfHealth4.enabled = true;
-            }
-            if (counter == 8)
-            {
-                fullHealth4.enabled = false;
-                halfHealth4.enabled = false;
-            }
-            if (counter == 10)
-            {
-                fullHealth3.enabled = false;
-                halfHealth3.enabled = true;
-            }
-            if (counter == 12)
-            {
-                fullHealth3.enabled = false;
-                halfHealth3.enabled = false;
-            }
-            if (counter == 14)
-            {
-                fullHealth2.enabled = false;
-                halfHealth2.enabled = true;
-            }
-            if (counter == 16)
-            {
-                fullHealth2.enabled = false;
-                halfHealth2.enabled = false;
-            }
-            if (counter == 18)
-            {
-                fullHealth1.enabled = false;
-                halfHealth1.enabled = true;
-            }
-            if (counter == 20)
-            {
-                fullHealth1.enabled = false;
-                halfHealth1.enabled = false;
-            }
-        }
+        flameLashAttack.transform.position = pos;
+        flameLashAttack.GetComponent<Animator>().SetBool("Attacking", true);
+		flameLashAttack.GetComponent<SpriteRenderer>().enabled = true;
+		}
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -192,8 +145,8 @@ public class PlayerDamage : MonoBehaviour
     private void OnTriggerExit2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Player"))
-        {
+        {	
             colliding = false;
-        }
+        } 
     }
 }

@@ -20,9 +20,10 @@ public class EnemyDialogue : MonoBehaviour
     public GameObject text8;
 
     public GameObject script;
-    public GameObject attackScript;
+	public GameObject thisScript;
 
     public Text tip;
+	public Text tipText;
 
     private bool stopMoving;
     private int source = 0;
@@ -53,7 +54,7 @@ public class EnemyDialogue : MonoBehaviour
                 text8.GetComponent<Text>().enabled = false;
                 source += 1;
 
-                start += 5;
+                start += 3;
             }
 
             SourceControl();
@@ -63,11 +64,12 @@ public class EnemyDialogue : MonoBehaviour
         {
             stopMoving = false;
             canvas.GetComponent<Canvas>().enabled = false;
-            enemyHealthBar.GetComponent<Canvas>().enabled = true;
 
-            attackScript.GetComponent<MonoBehaviour>().enabled = true;            
+            enemyHealthBar.GetComponent<Canvas>().enabled = true;
             script.GetComponent<MonoBehaviour>().enabled = true;
             script.GetComponent<Animator>().enabled = true;
+            thisScript.GetComponent<MonoBehaviour>().enabled = false;
+            Destroy(thisScript);
         }
     }
 
@@ -112,6 +114,8 @@ public class EnemyDialogue : MonoBehaviour
             stopMoving = true;
             canvas.GetComponent<Canvas>().enabled = true;
             text1.GetComponent<Text>().enabled = true;
+			
+			tip.enabled = true;
         }
     }
 
@@ -142,6 +146,7 @@ public class EnemyDialogue : MonoBehaviour
         //start the script that starts the first battle
         if (collision.CompareTag("Player")) {
             tip.enabled = false;
+			tipText.enabled = false;
         }
     }
 }

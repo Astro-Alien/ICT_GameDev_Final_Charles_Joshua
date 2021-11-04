@@ -30,29 +30,29 @@ namespace Assets.RPG.Scripts
         {
             if (Input.GetButton("Fire3"))
             {
-                //counter += 1;
+                counter += 1;
             }
         }
 
         private void Counter()
         {
-            if (counter == 2)
+            if (counter == 1)
             {
                 enemyhealth2.enabled = false;
             }
-            else if (counter == 3)
+            else if (counter == 2)
             {
                 enemyhealth3.enabled = false;
             }
-            else if (counter == 4)
+            else if (counter == 3)
             {
                 enemyhealth4.enabled = false;
             }
-            else if (counter == 5)
+            else if (counter == 4)
             {
                 enemyhealth5.enabled = false;
             }
-            else if (counter == 6)
+            else if (counter == 5)
             {
                 enemyhealth6.enabled = false;
             }
@@ -73,9 +73,9 @@ namespace Assets.RPG.Scripts
 
         private void OnTriggerStay2D(Collider2D collision)
         {
-            if (collision.CompareTag("Player") && Input.GetButtonDown("Fire3"))
+            if (collision.CompareTag("Player"))
             {
-                counter += 1;
+                //counter += 1;
 
                 Counter();
             }

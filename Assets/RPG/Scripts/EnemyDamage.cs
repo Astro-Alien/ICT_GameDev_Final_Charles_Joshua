@@ -16,6 +16,8 @@ public class EnemyDamage : MonoBehaviour
     public Image enemyhealth6;
 
     private float counter;
+	private float start = 0f;
+	private float end = 2f;
 
     // Start is called before the first frame update
     void Start()
@@ -27,7 +29,7 @@ public class EnemyDamage : MonoBehaviour
     void Update()
     {
         if (Input.GetButton("Fire3")) {
-            //counter += 1;
+            counter += 1;
         }
     }
 
@@ -35,22 +37,25 @@ public class EnemyDamage : MonoBehaviour
         if (counter == 2) {
             enemyhealth2.enabled = false;
         }
-        else if (counter == 3)
+        else if (counter == 4)
         {
             enemyhealth3.enabled = false;
         }
-        else if (counter == 4)
+        else if (counter == 6)
         {
             enemyhealth4.enabled = false;
         }
-        else if (counter == 5)
+        else if (counter == 8)
         {
             enemyhealth5.enabled = false;
         }
-        else if (counter == 6)
+        else if (counter == 10)
         {
             enemyhealth6.enabled = false;
         }
+		else if(counter > 10){
+			Destroy(evilKing);
+		}
 
     }
 
@@ -69,7 +74,7 @@ public class EnemyDamage : MonoBehaviour
     {
         if (collision.CompareTag("Player") && Input.GetButtonDown("Fire3"))
         {
-            counter += 1;
+			//counter += 1;
 
             Counter();
         }

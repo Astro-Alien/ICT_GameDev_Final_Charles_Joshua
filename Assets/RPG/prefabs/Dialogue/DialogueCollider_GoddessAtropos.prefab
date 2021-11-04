@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4975110418953927219}
   - component: {fileID: 4975110418953927218}
-  - component: {fileID: 4975110418953927217}
+  - component: {fileID: 1363728610}
   m_Layer: 0
   m_Name: DialogueCollider_GoddessAtropos
   m_TagString: Untagged
@@ -45,10 +45,10 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.08, y: 0.21}
+  m_Offset: {x: 70.4, y: -16.6}
   serializedVersion: 2
   m_Radius: 2.8637438
---- !u!114 &4975110418953927217
+--- !u!114 &1363728610
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -57,7 +57,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 4975110418953927216}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6dd0566866fe090409fc7352448182e1, type: 3}
+  m_Script: {fileID: 11500000, guid: 8f0a180a420b8b24c9426e557e309c12, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   canvas: {fileID: 0}
@@ -72,3 +72,6 @@ MonoBehaviour:
   text7: {fileID: 0}
   text8: {fileID: 0}
   script: {fileID: 0}
+  tip: {fileID: 0}
+  choice: {fileID: 0}
+  thisScript: {fileID: 4975110418953927216}
