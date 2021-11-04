@@ -8,7 +8,7 @@ public class EnemyAIMovement : MonoBehaviour
     public bool mustRotate;
     public LayerMask PlayerLayer;
     public Vector3 direction;
-
+    
     private Transform target;
     private Rigidbody2D rigid;
     private Animator animator;
@@ -49,6 +49,7 @@ public class EnemyAIMovement : MonoBehaviour
     {
         if (isInRange && !isInAttackRange) {
 
+            
             MoveEnemy(vcmovement);
         
         
