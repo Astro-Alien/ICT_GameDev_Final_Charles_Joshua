@@ -130,6 +130,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 389690907, guid: a6c0539fabeb8214ea195ee3f96038aa, type: 3}
+      propertyPath: m_Radius
+      value: 1.24
+      objectReference: {fileID: 0}
+    - target: {fileID: 389690908, guid: a6c0539fabeb8214ea195ee3f96038aa, type: 3}
+      propertyPath: m_Radius
+      value: 0.36
+      objectReference: {fileID: 0}
     - target: {fileID: 1001416072833924448, guid: a6c0539fabeb8214ea195ee3f96038aa, type: 3}
       propertyPath: m_Name
       value: Player
@@ -41234,7 +41242,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 1.69
+  m_Radius: 1.91
 --- !u!61 &663511710
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -42242,6 +42250,35 @@ MonoBehaviour:
   enemyhealth5: {fileID: 2094435899}
   enemyhealth6: {fileID: 149375321}
   Credits: Credits
+--- !u!114 &769825519
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 769825517}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 81b5cf62d0c14bb4c803f507fec7fe1b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 1192417191}
+  halfHealth1: {fileID: 505174727}
+  fullHealth1: {fileID: 1326242237}
+  halfHealth2: {fileID: 1919231023}
+  fullHealth2: {fileID: 1540682148}
+  halfHealth3: {fileID: 1386427023}
+  fullHealth3: {fileID: 1786328439}
+  halfHealth4: {fileID: 966262199}
+  fullHealth4: {fileID: 376559012}
+  halfHealth5: {fileID: 1173374688}
+  fullHealth5: {fileID: 450994219}
+  gameOver: {fileID: 1887049084}
+  boss: {fileID: 663511704}
+  flameLashAttack: {fileID: 701151455}
+  midnightAttack: {fileID: 0}
+  freezingAttack: {fileID: 0}
+  enemyHealthBar1: {fileID: 940232564}
 --- !u!1001 &806513054
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -42421,35 +42458,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1001416072833924448, guid: a6c0539fabeb8214ea195ee3f96038aa, type: 3}
   m_PrefabInstance: {fileID: 142323538}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1192417192
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1192417191}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 81b5cf62d0c14bb4c803f507fec7fe1b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 1192417191}
-  halfHealth1: {fileID: 505174727}
-  fullHealth1: {fileID: 1326242237}
-  halfHealth2: {fileID: 1919231023}
-  fullHealth2: {fileID: 1540682148}
-  halfHealth3: {fileID: 1386427023}
-  fullHealth3: {fileID: 1786328439}
-  halfHealth4: {fileID: 966262199}
-  fullHealth4: {fileID: 376559012}
-  halfHealth5: {fileID: 1173374688}
-  fullHealth5: {fileID: 450994219}
-  gameOver: {fileID: 1887049084}
-  boss: {fileID: 663511704}
-  flameLashAttack: {fileID: 701151455}
-  midnightAttack: {fileID: 0}
-  freezingAttack: {fileID: 0}
-  dialogueCanvas: {fileID: 1824340590}
 --- !u!1001 &1194243124
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -43848,7 +43856,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3492193910042408661, guid: d7105ed8f0a09034186c446529968920, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 35.4
+      value: 35.399994
+      objectReference: {fileID: 0}
+    - target: {fileID: 3492193910435157720, guid: d7105ed8f0a09034186c446529968920, type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3492193910477485002, guid: d7105ed8f0a09034186c446529968920, type: 3}
       propertyPath: m_AnchorMax.y
@@ -43860,7 +43872,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3492193910477485002, guid: d7105ed8f0a09034186c446529968920, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 95.30002
+      value: 95.30005
       objectReference: {fileID: 0}
     - target: {fileID: 3492193910477485002, guid: d7105ed8f0a09034186c446529968920, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -43869,6 +43881,10 @@ PrefabInstance:
     - target: {fileID: 4296544661650480549, guid: d7105ed8f0a09034186c446529968920, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: -31.674988
+      objectReference: {fileID: 0}
+    - target: {fileID: 4296544661739457924, guid: d7105ed8f0a09034186c446529968920, type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4296544661739457927, guid: d7105ed8f0a09034186c446529968920, type: 3}
       propertyPath: m_AnchoredPosition.x
