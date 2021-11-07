@@ -685,6 +685,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fc02b8ac43504d4459d98241928a6254, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  levelName: TownMap
 --- !u!1 &467342011
 GameObject:
   m_ObjectHideFlags: 0
@@ -831,6 +832,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fc02b8ac43504d4459d98241928a6254, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  levelName: 
 --- !u!1 &666712040
 GameObject:
   m_ObjectHideFlags: 0
