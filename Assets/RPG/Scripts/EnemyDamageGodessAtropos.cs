@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 namespace Assets.RPG.Scripts
@@ -17,6 +18,8 @@ namespace Assets.RPG.Scripts
         public Image enemyhealth5;
         public Image enemyhealth6;
 
+        public string Credits;
+
         private float counter;
 
         // Start is called before the first frame update
@@ -30,7 +33,7 @@ namespace Assets.RPG.Scripts
         {
             if (Input.GetButton("Fire3"))
             {
-                counter += 1;
+                //counter += 1;
             }
         }
 
@@ -57,6 +60,15 @@ namespace Assets.RPG.Scripts
                 enemyhealth6.enabled = false;
             }
 
+            if (enemyhealth6.enabled == false) {
+                Destroy(evilKing);
+                Destroy(enemyHealthBar);
+
+                if (Time.time > 10f)
+                {
+                    SceneManager.LoadScene(Credits);
+                }
+            }
         }
 
         private void OnTriggerEnter2D(Collider2D collision)
@@ -65,9 +77,9 @@ namespace Assets.RPG.Scripts
             {
                 enemyhealth1.enabled = false;
 
-                //counter += 1;
+                counter += 1;
 
-                //Counter();
+                Counter();
             }
         }
 
@@ -77,7 +89,7 @@ namespace Assets.RPG.Scripts
             {
                 //counter += 1;
 
-                Counter();
+                //Counter();
             }
         }
     }

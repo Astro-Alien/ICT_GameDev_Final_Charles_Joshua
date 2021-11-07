@@ -24,12 +24,15 @@ public class PlayerDamage : MonoBehaviour
     public GameObject midnightAttack;
     public GameObject freezingAttack;
 
+    public Canvas dialogueCanvas;
+
     private int counter;
     private bool colliding;
 
     private float start = 0f;
     private float end = 20f;
 	private int rand;
+    private int randMagic;
 
     // Start is called before the first frame update
     void Start()
@@ -40,16 +43,29 @@ public class PlayerDamage : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-		rand = Random.Range(1, 10);
-		
-		if(rand = 5){
+        rand = Random.RandomRange(1, 10);
+        randMagic = Random.RandomRange(1, 3);
+
+
         Vector2 pos = new Vector2();
         pos = player.transform.position;
 
-        flameLashAttack.transform.position = pos;
-        flameLashAttack.GetComponent<Animator>().SetBool("Attacking", true);
-		flameLashAttack.GetComponent<SpriteRenderer>().enabled = true;
-		}
+        if (dialogueCanvas.enabled == false)
+        {
+
+            flameLashAttack.transform.position = pos;
+            flameLashAttack.GetComponent<Animator>().SetBool("Attacking", true);
+            flameLashAttack.GetComponent<SpriteRenderer>().enabled = true;
+
+            midnightAttack.transform.position = pos;
+            midnightAttack.GetComponent<Animator>().SetBool("Attacking", true);
+            midnightAttack.GetComponent<SpriteRenderer>().enabled = true;
+
+            freezingAttack.transform.position = pos;
+            freezingAttack.GetComponent<Animator>().SetBool("Attacking", true);
+            freezingAttack.GetComponent<SpriteRenderer>().enabled = true;
+
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

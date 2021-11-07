@@ -26,7 +26,7 @@ public class RegularEnemyDamage : MonoBehaviour
 
     private void Counter()
     {
-        if (counter == 2)
+        if (counter == 1)
         {
             Destroy(enemy);
         }

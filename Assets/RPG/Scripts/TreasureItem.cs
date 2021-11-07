@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class TreasureItem : MonoBehaviour
 {
@@ -9,6 +10,8 @@ public class TreasureItem : MonoBehaviour
     public GameObject healthPotion;
     public GameObject secondBossKey;
     public Animator anim;
+
+    public Image enemyHealth6;
 
     // Start is called before the first frame update
     void Start()
@@ -19,7 +22,9 @@ public class TreasureItem : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (enemyHealth6.enabled == false) {
+            chest.GetComponent<SpriteRenderer>().enabled = true;
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEditor;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 namespace Assets.RPG.Scripts
@@ -10,7 +11,6 @@ namespace Assets.RPG.Scripts
     public class EndingOneDialogue : MonoBehaviour
     {
         public Canvas canvas;
-        public Canvas enemyHealthBar;
         public CircleCollider2D collider;
         public GameObject text1;
         public GameObject text2;
@@ -24,11 +24,13 @@ namespace Assets.RPG.Scripts
 
         public Text tip;
 
+        public string Credits = "Credits";
+
         private bool stopMoving;
         private int source = 0;
 
         private float start = 0f;
-        private float pause = 10f;
+        private float pause = 25f;
         private bool wait;
 
         // Start is called before the first frame update
@@ -39,7 +41,8 @@ namespace Assets.RPG.Scripts
         // Update is called once per frame
         void FixedUpdate()
         {
-            if (Time.time - start < pause) {
+            if (Time.time - start < pause)
+            {
                 canvas.GetComponent<Canvas>().enabled = true;
             }
 
@@ -54,20 +57,20 @@ namespace Assets.RPG.Scripts
                 text7.GetComponent<Text>().enabled = false;
                 source += 1;
 
-                start += 10;
-
                 SourceControl();
+
+                start += 5;
             }
 
             if (source > 6)
             {
-                stopMoving = false;
                 canvas.GetComponent<Canvas>().enabled = false;
-                enemyHealthBar.GetComponent<Canvas>().enabled = true;
-
+                stopMoving = false;
 
                 script.GetComponent<MonoBehaviour>().enabled = true;
                 script.GetComponent<Animator>().enabled = true;
+
+                SceneManager.LoadScene(Credits);
             }
         }
 
@@ -109,6 +112,7 @@ namespace Assets.RPG.Scripts
             {
                 stopMoving = true;
                 canvas.GetComponent<Canvas>().enabled = true;
+                
                 text1.GetComponent<Text>().enabled = true;
             }
         }

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEditor;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 namespace Assets.RPG.Scripts
@@ -23,7 +24,7 @@ namespace Assets.RPG.Scripts
 
         public GameObject script;
         public Text tip;
-
+        
         public Canvas choice;
         public GameObject thisScript;
 
@@ -56,7 +57,7 @@ namespace Assets.RPG.Scripts
                     text8.GetComponent<Text>().enabled = false;
                     source += 1;
 
-                    start += 3;
+                    start += 2;
                 }
 
                 SourceControl();
