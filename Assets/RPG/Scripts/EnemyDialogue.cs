@@ -103,7 +103,7 @@ public class EnemyDialogue : MonoBehaviour
             text8.GetComponent<Text>().enabled = true;
         }
         else if (text2.activeSelf == false) {
-            source = 8;
+            source = 7;
         }
     }
 

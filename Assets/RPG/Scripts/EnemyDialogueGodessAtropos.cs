@@ -57,7 +57,7 @@ namespace Assets.RPG.Scripts
                     text8.GetComponent<Text>().enabled = false;
                     source += 1;
 
-                    start += 2;
+                    start += 4;
                 }
 
                 SourceControl();

@@ -165,3 +165,4 @@ MonoBehaviour:
   healthPotion: {fileID: 0}
   secondBossKey: {fileID: 0}
   anim: {fileID: 7412568359010496506}
+  enemyHealth6: {fileID: 0}

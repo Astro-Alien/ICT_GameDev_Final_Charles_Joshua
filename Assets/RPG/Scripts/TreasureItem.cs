@@ -29,6 +29,7 @@ public class TreasureItem : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        /**
         if (collision.CompareTag("Player"))
         {
             if (Input.GetButton("Jump"))
@@ -39,6 +40,25 @@ public class TreasureItem : MonoBehaviour
 
                 healthPotion.GetComponent<SpriteRenderer>().enabled = true;
                 secondBossKey.GetComponent<SpriteRenderer>().enabled = true;
+
+            }
+        }
+        **/
+    }
+
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Player"))
+        {
+            if (Input.GetButton("Jump"))
+            {
+                anim.SetBool("Open", true);
+
+                DestroyObject(chest);
+
+                healthPotion.GetComponent<SpriteRenderer>().enabled = true;
+                secondBossKey.GetComponent<SpriteRenderer>().enabled = true;
+
             }
         }
     }

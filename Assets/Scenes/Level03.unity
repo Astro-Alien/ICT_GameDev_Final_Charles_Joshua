@@ -41269,11 +41269,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.3025529, y: 1.8331928}
   m_EdgeRadius: 0
---- !u!1 &700296304 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8849878544505271103, guid: 437a76ce51330e24b9f2a7a10e508d96, type: 3}
-  m_PrefabInstance: {fileID: 8849878545186152271}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &701151455 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5692647829114303688, guid: 83dc5724292460e48850e5d097161a0c, type: 3}
@@ -42223,62 +42218,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 142323539}
---- !u!1 &769825517 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5438751817705532504, guid: 8104cd163f71ed04d848532746ea2575, type: 3}
-  m_PrefabInstance: {fileID: 806513054}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &769825518
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 769825517}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6a065004af0ad1542a2e1d1ddc31d9b2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 1192417191}
-  evilKing: {fileID: 663511704}
-  enemyHealthBar: {fileID: 2077022954}
-  enemyhealth1: {fileID: 940232564}
-  enemyhealth2: {fileID: 265738909}
-  enemyhealth3: {fileID: 1191217222}
-  enemyhealth4: {fileID: 1453843888}
-  enemyhealth5: {fileID: 2094435899}
-  enemyhealth6: {fileID: 149375321}
-  Credits: Credits
---- !u!114 &769825519
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 769825517}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 81b5cf62d0c14bb4c803f507fec7fe1b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 1192417191}
-  halfHealth1: {fileID: 505174727}
-  fullHealth1: {fileID: 1326242237}
-  halfHealth2: {fileID: 1919231023}
-  fullHealth2: {fileID: 1540682148}
-  halfHealth3: {fileID: 1386427023}
-  fullHealth3: {fileID: 1786328439}
-  halfHealth4: {fileID: 966262199}
-  fullHealth4: {fileID: 376559012}
-  halfHealth5: {fileID: 1173374688}
-  fullHealth5: {fileID: 450994219}
-  gameOver: {fileID: 1887049084}
-  boss: {fileID: 663511704}
-  flameLashAttack: {fileID: 701151455}
-  midnightAttack: {fileID: 0}
-  freezingAttack: {fileID: 0}
-  enemyHealthBar1: {fileID: 940232564}
 --- !u!1001 &806513054
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -42286,81 +42225,105 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 5438751817705532485, guid: 8104cd163f71ed04d848532746ea2575, type: 3}
-      propertyPath: boss
-      value: 
-      objectReference: {fileID: 663511704}
-    - target: {fileID: 5438751817705532485, guid: 8104cd163f71ed04d848532746ea2575, type: 3}
+    - target: {fileID: 769825518, guid: 8104cd163f71ed04d848532746ea2575, type: 3}
       propertyPath: player
       value: 
       objectReference: {fileID: 1192417191}
-    - target: {fileID: 5438751817705532485, guid: 8104cd163f71ed04d848532746ea2575, type: 3}
+    - target: {fileID: 769825518, guid: 8104cd163f71ed04d848532746ea2575, type: 3}
+      propertyPath: evilKing
+      value: 
+      objectReference: {fileID: 663511704}
+    - target: {fileID: 769825518, guid: 8104cd163f71ed04d848532746ea2575, type: 3}
+      propertyPath: enemyhealth1
+      value: 
+      objectReference: {fileID: 940232564}
+    - target: {fileID: 769825518, guid: 8104cd163f71ed04d848532746ea2575, type: 3}
+      propertyPath: enemyhealth2
+      value: 
+      objectReference: {fileID: 265738909}
+    - target: {fileID: 769825518, guid: 8104cd163f71ed04d848532746ea2575, type: 3}
+      propertyPath: enemyhealth3
+      value: 
+      objectReference: {fileID: 1191217222}
+    - target: {fileID: 769825518, guid: 8104cd163f71ed04d848532746ea2575, type: 3}
+      propertyPath: enemyhealth4
+      value: 
+      objectReference: {fileID: 1453843888}
+    - target: {fileID: 769825518, guid: 8104cd163f71ed04d848532746ea2575, type: 3}
+      propertyPath: enemyhealth5
+      value: 
+      objectReference: {fileID: 2094435899}
+    - target: {fileID: 769825518, guid: 8104cd163f71ed04d848532746ea2575, type: 3}
+      propertyPath: enemyhealth6
+      value: 
+      objectReference: {fileID: 149375321}
+    - target: {fileID: 769825518, guid: 8104cd163f71ed04d848532746ea2575, type: 3}
+      propertyPath: enemyHealthBar
+      value: 
+      objectReference: {fileID: 2077022954}
+    - target: {fileID: 769825519, guid: 8104cd163f71ed04d848532746ea2575, type: 3}
+      propertyPath: boss
+      value: 
+      objectReference: {fileID: 663511704}
+    - target: {fileID: 769825519, guid: 8104cd163f71ed04d848532746ea2575, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1192417191}
+    - target: {fileID: 769825519, guid: 8104cd163f71ed04d848532746ea2575, type: 3}
       propertyPath: gameOver
       value: 
       objectReference: {fileID: 1887049084}
-    - target: {fileID: 5438751817705532485, guid: 8104cd163f71ed04d848532746ea2575, type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5438751817705532485, guid: 8104cd163f71ed04d848532746ea2575, type: 3}
+    - target: {fileID: 769825519, guid: 8104cd163f71ed04d848532746ea2575, type: 3}
       propertyPath: fullHealth1
       value: 
       objectReference: {fileID: 1326242237}
-    - target: {fileID: 5438751817705532485, guid: 8104cd163f71ed04d848532746ea2575, type: 3}
+    - target: {fileID: 769825519, guid: 8104cd163f71ed04d848532746ea2575, type: 3}
       propertyPath: fullHealth2
       value: 
       objectReference: {fileID: 1540682148}
-    - target: {fileID: 5438751817705532485, guid: 8104cd163f71ed04d848532746ea2575, type: 3}
+    - target: {fileID: 769825519, guid: 8104cd163f71ed04d848532746ea2575, type: 3}
       propertyPath: fullHealth3
       value: 
       objectReference: {fileID: 1786328439}
-    - target: {fileID: 5438751817705532485, guid: 8104cd163f71ed04d848532746ea2575, type: 3}
+    - target: {fileID: 769825519, guid: 8104cd163f71ed04d848532746ea2575, type: 3}
       propertyPath: fullHealth4
       value: 
       objectReference: {fileID: 376559012}
-    - target: {fileID: 5438751817705532485, guid: 8104cd163f71ed04d848532746ea2575, type: 3}
+    - target: {fileID: 769825519, guid: 8104cd163f71ed04d848532746ea2575, type: 3}
       propertyPath: fullHealth5
       value: 
       objectReference: {fileID: 450994219}
-    - target: {fileID: 5438751817705532485, guid: 8104cd163f71ed04d848532746ea2575, type: 3}
+    - target: {fileID: 769825519, guid: 8104cd163f71ed04d848532746ea2575, type: 3}
       propertyPath: halfHealth1
       value: 
       objectReference: {fileID: 505174727}
-    - target: {fileID: 5438751817705532485, guid: 8104cd163f71ed04d848532746ea2575, type: 3}
+    - target: {fileID: 769825519, guid: 8104cd163f71ed04d848532746ea2575, type: 3}
       propertyPath: halfHealth2
       value: 
       objectReference: {fileID: 1919231023}
-    - target: {fileID: 5438751817705532485, guid: 8104cd163f71ed04d848532746ea2575, type: 3}
+    - target: {fileID: 769825519, guid: 8104cd163f71ed04d848532746ea2575, type: 3}
       propertyPath: halfHealth3
       value: 
       objectReference: {fileID: 1386427023}
-    - target: {fileID: 5438751817705532485, guid: 8104cd163f71ed04d848532746ea2575, type: 3}
+    - target: {fileID: 769825519, guid: 8104cd163f71ed04d848532746ea2575, type: 3}
       propertyPath: halfHealth4
       value: 
       objectReference: {fileID: 966262199}
-    - target: {fileID: 5438751817705532485, guid: 8104cd163f71ed04d848532746ea2575, type: 3}
+    - target: {fileID: 769825519, guid: 8104cd163f71ed04d848532746ea2575, type: 3}
       propertyPath: halfHealth5
       value: 
       objectReference: {fileID: 1173374688}
-    - target: {fileID: 5438751817705532485, guid: 8104cd163f71ed04d848532746ea2575, type: 3}
-      propertyPath: freezingAttack
+    - target: {fileID: 769825519, guid: 8104cd163f71ed04d848532746ea2575, type: 3}
+      propertyPath: enemyHealthBar1
       value: 
-      objectReference: {fileID: 700296304}
-    - target: {fileID: 5438751817705532485, guid: 8104cd163f71ed04d848532746ea2575, type: 3}
-      propertyPath: midnightAttack
-      value: 
-      objectReference: {fileID: 1913269624}
-    - target: {fileID: 5438751817705532485, guid: 8104cd163f71ed04d848532746ea2575, type: 3}
+      objectReference: {fileID: 940232564}
+    - target: {fileID: 769825519, guid: 8104cd163f71ed04d848532746ea2575, type: 3}
       propertyPath: flameLashAttack
       value: 
       objectReference: {fileID: 701151455}
     - target: {fileID: 5438751817705532504, guid: 8104cd163f71ed04d848532746ea2575, type: 3}
       propertyPath: m_Name
       value: DamageCollider
-      objectReference: {fileID: 0}
-    - target: {fileID: 5438751817705532506, guid: 8104cd163f71ed04d848532746ea2575, type: 3}
-      propertyPath: m_Radius
-      value: 1.4
       objectReference: {fileID: 0}
     - target: {fileID: 5438751817705532507, guid: 8104cd163f71ed04d848532746ea2575, type: 3}
       propertyPath: m_RootOrder
@@ -42406,8 +42369,7 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 5438751817705532485, guid: 8104cd163f71ed04d848532746ea2575, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8104cd163f71ed04d848532746ea2575, type: 3}
 --- !u!114 &940232564 stripped
 MonoBehaviour:
@@ -43369,11 +43331,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 199c818cb44b094428440f2a58385b95, type: 3}
---- !u!1 &1913269624 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2201818018445077617, guid: 1addfe42abd02bb4e8d01aea7addd396, type: 3}
-  m_PrefabInstance: {fileID: 2201818016599179529}
-  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1919231023 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7436915840331483278, guid: 99d9d98c66b31d84ba5be7b971300c94, type: 3}

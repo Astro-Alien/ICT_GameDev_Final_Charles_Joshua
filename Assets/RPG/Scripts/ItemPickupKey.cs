@@ -7,8 +7,10 @@ using UnityEngine.UI;
 public class ItemPickupKey : MonoBehaviour
 {
     public GameObject key;
+    public Text text;
+    public GameObject boss;
 
-    private StreamWriter writer = new StreamWriter("SecondBossKey.txt");
+    private StreamWriter writer = new StreamWriter(@"Assets\CurrentLevelThree.txt");
     private Text textFile;
     private string line;
 
@@ -28,8 +30,15 @@ public class ItemPickupKey : MonoBehaviour
         if (collision.CompareTag("Player")) {
             Destroy(key);
 
-            writer.WriteLine("second boss key");
-            writer.Close();
+            if (boss.CompareTag("EvilKing"))
+            {
+                writer.Write(text.text);
+            }
+            if (boss.CompareTag("DarkSage"))
+            {
+                writer.Write(text.text);
+            }
+
         }
     }
 }

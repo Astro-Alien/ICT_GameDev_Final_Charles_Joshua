@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class ItemPickup : MonoBehaviour
+public class ItemPickupHealthPotion : MonoBehaviour
 {
     public GameObject health;
     public Image healthBar4;

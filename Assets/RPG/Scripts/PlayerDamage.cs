@@ -80,8 +80,8 @@ public class PlayerDamage : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player") && Input.GetButton("Fire3"))
         {
+            counter += 1;
             CounterCheck();
-
         }
     }
 
@@ -171,17 +171,14 @@ public class PlayerDamage : MonoBehaviour
     private void OnTriggerStay2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Player") && Input.GetButton("Fire3")) {
-            //CounterCheck();
+            CounterCheck();
         }
     }
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("Player"))
-        {
-            flameLashAttack.GetComponent<SpriteRenderer>().enabled = false;
-            midnightAttack.GetComponent<SpriteRenderer>().enabled = false;
-            freezingAttack.GetComponent<SpriteRenderer>().enabled = false;
-        } 
+        flameLashAttack.GetComponent<SpriteRenderer>().enabled = false;
+        midnightAttack.GetComponent<SpriteRenderer>().enabled = false;
+        freezingAttack.GetComponent<SpriteRenderer>().enabled = false;
     }
 }
